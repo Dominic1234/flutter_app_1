@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-      home: Home()
-  ));
+  runApp(MaterialApp(home: Home()));
 }
 
 class Home extends StatelessWidget {
@@ -24,13 +22,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.grey,
       ),
       body: Center(
-        child: Text(
-          'Hello, World!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            color: Colors.green,
-          ),
+        child: Image(
+          image: AssetImage('assets/DSC_Logo.png'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -50,3 +43,14 @@ class Home extends StatelessWidget {
   }
 }
 
+class RandomWords extends StatefulWidget {
+  @override
+  _RandomWordsState createState() => _RandomWordsState();
+}
+
+class _RandomWordsState extends State<RandomWords> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
